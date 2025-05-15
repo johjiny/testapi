@@ -21,4 +21,4 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 앱 실행
-CMD ["uvicorn", "web_api_server:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
